@@ -21,9 +21,29 @@ namespace BookingSystem.API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Service>>> GetServices()
+        public async Task<ActionResult<IEnumerable<Service>>> GetServices([FromQuery] SearchFilterDto filter)
         {
-            return await _context.Services.ToListAsync();
+            //Khởi tạo query
+            var query = _context.Services.AsQueryable();
+
+            if(!string.IsNullOrEmpty(filter.Keyword))
+            {
+                query = query.Where(s => s.Name.Contains(filter.Keyword));
+            }
+
+            if(filter.MinPrice.HasValue)
+            {
+                query = query.Where(s => s.Price >= filter.MinPrice.Value);
+            }
+
+            if(filter.MaxPrice.HasValue)
+            {
+                query = query.Where(s => s.Price <= filter.MaxPrice.Value);
+            }
+
+            query = query.OrderByDescending(s => s.CreateAt);
+
+            return await query.ToListAsync();
         }
 
         [HttpGet("{id}")]

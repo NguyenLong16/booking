@@ -9,5 +9,6 @@ namespace BookingSystem.API.Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<Service> Services { get; set; }
+        public DbSet<Booking> Bookings { get; set; }
     }
 }

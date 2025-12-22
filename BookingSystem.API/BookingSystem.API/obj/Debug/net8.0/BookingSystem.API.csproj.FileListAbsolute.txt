@@ -168,3 +168,4 @@ F:\WorkSpace\BookingSystem\BookingSystem.API\BookingSystem.API\obj\Debug\net8.0\
 F:\WorkSpace\BookingSystem\BookingSystem.API\BookingSystem.API\obj\Debug\net8.0\BookingSystem.API.genruntimeconfig.cache
 F:\WorkSpace\BookingSystem\BookingSystem.API\BookingSystem.API\obj\Debug\net8.0\ref\BookingSystem.API.dll
 F:\WorkSpace\BookingSystem\BookingSystem.API\BookingSystem.API\bin\Debug\net8.0\BookingSystem.API.staticwebassets.runtime.json
+F:\WorkSpace\BookingSystem\BookingSystem.API\BookingSystem.API\obj\Debug\net8.0\BookingSystem.API.sourcelink.json
