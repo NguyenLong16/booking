@@ -8,24 +8,23 @@ namespace BookingSystem.API.Entities
         public int Id { get; set; }
 
         [Required]
-        public string CustomerName { get; set; } = string.Empty; // Tên khách
+        public string CustomerName { get; set; } = string.Empty;
 
         [Required]
-        public string PhoneNumber { get; set; } = string.Empty; // SĐT để liên hệ
+        public string PhoneNumber { get; set; } = string.Empty;
 
-        public string? Note { get; set; } // Ghi chú thêm
+        public string? Note { get; set; }
 
-        public DateTime BookingDate { get; set; } // Ngày giờ khách muốn làm
-
+        public DateTime BookingDate { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public int Status { get; set; } = 0;
 
-        public int Status { get; set; } = 0; // 0: Mới, 1: Đã xác nhận, 2: Hoàn thành, 3: Hủy
-
-        // Khóa ngoại liên kết với Service
+        // FK Service
         public int ServiceId { get; set; }
-        public string? UserId { get; set; }
+        public Service Service { get; set; } = null!;
 
-        [ForeignKey("ServiceId")]
-        public Service? Service { get; set; }
+        // FK User
+        public int UserId { get; set; }   
+        public User User { get; set; } = null!;
     }
 }

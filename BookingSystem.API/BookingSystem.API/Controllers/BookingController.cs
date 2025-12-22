@@ -29,7 +29,9 @@ namespace BookingSystem.API.Controllers
                 return BadRequest("Không thể đặt lịch trong quá khứ.");
             }
 
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            int userId = int.Parse(
+                User.FindFirstValue(ClaimTypes.NameIdentifier)!
+            );
 
             var booking = new Booking
             {
@@ -53,12 +55,9 @@ namespace BookingSystem.API.Controllers
         [Authorize]
         public async Task<ActionResult<IEnumerable<Booking>>> GetHistory()
         {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            if (string.IsNullOrEmpty(userId))
-            {
-                return Unauthorized("Bạn chưa đăng nhập");
-            }
+            int userId = int.Parse(
+                User.FindFirstValue(ClaimTypes.NameIdentifier)!
+            );
 
             var bookings = await _context.Bookings
                 .Include(b => b.Service)
@@ -67,6 +66,37 @@ namespace BookingSystem.API.Controllers
                 .ToListAsync();
 
             return Ok(bookings);
+        }
+
+        [HttpGet("admin/all")]
+        public async Task<ActionResult<IEnumerable<Booking>>> GetAllBookings()
+        {
+            var booking = await _context.Bookings
+                .Include(b => b.Service)
+                .Include(b => b.User)
+                .OrderByDescending(b => b.CreatedAt)
+                .ToListAsync();
+
+            return Ok(booking);
+        }
+
+        [HttpPut("admin/{id}/status")]
+        public async Task<IActionResult> UpdateStatus(int id, [FromBody] int newStatus)
+        {
+            var booking = await _context.Bookings.FindAsync(id);
+            if(booking == null)
+            {
+                return NotFound("Không tìm thấy đơn hàng");
+            }
+
+            if(newStatus < 0 || newStatus > 3)
+            {
+                return BadRequest("Trạng thái không hợp lệ");
+            }
+
+            booking.Status = newStatus;
+            await _context.SaveChangesAsync();
+            return Ok(new { message = "Cập nhật trạng thái thành công" });
         }
     }
 }
