@@ -24,7 +24,9 @@ namespace BookingSystem.API.Controllers
         public async Task<ActionResult<IEnumerable<Service>>> GetServices([FromQuery] SearchFilterDto filter)
         {
             //Khởi tạo query
-            var query = _context.Services.AsQueryable();
+            var query = _context.Services
+                .Include(s => s.Category)
+                .AsQueryable();
 
             if(!string.IsNullOrEmpty(filter.Keyword))
             {
@@ -67,6 +69,8 @@ namespace BookingSystem.API.Controllers
                 Description = request.Description,
                 Price = request.Price,
                 Duration = request.Duration,
+                DurationUnit = request.DurationUnit, // Lưu đơn vị (Phút/Giờ/Ngày)
+                CategoryId = request.CategoryId,
                 IsActive = request.IsActive,
             };
 
@@ -90,6 +94,8 @@ namespace BookingSystem.API.Controllers
             service.Description = request.Description;
             service.Price = request.Price;
             service.Duration = request.Duration;
+            service.DurationUnit = request.DurationUnit;
+            service.CategoryId = request.CategoryId;
             service.IsActive = request.IsActive;
 
             if(request.ImageUrl !=null)
