@@ -16,47 +16,71 @@ namespace BookingSystem.API.Controllers
         }
 
         [HttpGet("revenue")]
-        // [Authorize(Roles = "Admin")] // Bật lại khi bạn đã có phân quyền
         public async Task<IActionResult> GetRevenueStats()
         {
-            // 1. Lấy danh sách các đơn hàng ĐÃ HOÀN THÀNH (Status = 2)
-            // Lấy dữ liệu của 30 ngày gần nhất
             var startDate = DateTime.Now.AddDays(-30);
 
+            // 1. Lấy dữ liệu thô
             var bookings = await _context.Bookings
                 .Include(b => b.Service)
+                .ThenInclude(s => s.Category) // Quan trọng: Phải join Category
                 .Where(b => b.Status == 2 && b.BookingDate >= startDate)
-                .ToListAsync(); // Tải về bộ nhớ để xử lý GroupBy cho dễ (tránh lỗi EF Core translation)
+                .ToListAsync();
 
-            // 2. Nhóm theo ngày và tính tổng tiền
-            var revenueByDate = bookings
+            // 2. Xử lý dữ liệu cho biểu đồ cột chồng (Stacked Bar Chart)
+            // Cấu trúc mong muốn: { date: "24/12", "Spa": 500000, "Cắt tóc": 200000 }
+            var chartData = bookings
                 .GroupBy(b => b.BookingDate.Date)
-                .Select(g => new
-                {
-                    Date = g.Key.ToString("dd/MM"), // Format ngày để hiển thị trục hoành
-                    TotalRevenue = g.Sum(b => b.Service?.Price ?? 0), // Tổng tiền
-                    Count = g.Count() // Số lượng đơn
+                .OrderBy(g => g.Key)
+                .Select(g => {
+                    // Tạo dictionary động để chứa tên các category làm key
+                    var dataPoint = new Dictionary<string, object>();
+                    dataPoint["date"] = g.Key.ToString("dd/MM");
+
+                    // Tính tổng tiền cho từng category trong ngày đó
+                    var categoriesInDay = g.GroupBy(b => b.Service.Category?.Name ?? "Khác");
+                    foreach (var catGroup in categoriesInDay)
+                    {
+                        dataPoint[catGroup.Key] = catGroup.Sum(b => b.Service.Price);
+                    }
+
+                    return dataPoint;
                 })
-                .OrderBy(x => x.Date)
                 .ToList();
 
-            // 3. Tính các số liệu tổng quan (Card ở trên cùng)
-            var totalRevenueAllTime = await _context.Bookings
-                .Where(b => b.Status == 2)
-                .SumAsync(b => b.Service.Price);
-
-            var totalOrdersCompleted = await _context.Bookings
-                .CountAsync(b => b.Status == 2);
+            // 3. Tính số liệu tổng quan (Giữ nguyên)
+            var totalRevenueAllTime = await _context.Bookings.Where(b => b.Status == 2).SumAsync(b => b.Service.Price);
+            var totalOrdersCompleted = await _context.Bookings.CountAsync(b => b.Status == 2);
 
             return Ok(new
             {
-                ChartData = revenueByDate,
+                ChartData = chartData, // Dữ liệu dạng động
                 Summary = new
                 {
                     TotalRevenue = totalRevenueAllTime,
                     TotalOrders = totalOrdersCompleted
                 }
             });
+        }
+
+        // GET: api/Stats/category
+        [HttpGet("category")]
+        public async Task<IActionResult> GetCategoryStats()
+        {
+            // Thống kê số lượng đơn hàng hoàn thành (Status = 2) theo từng danh mục
+            var stats = await _context.Bookings
+                .Include(b => b.Service)
+                .ThenInclude(s => s.Category) // Join sâu vào Category
+                .Where(b => b.Status == 2) // Chỉ tính đơn hoàn thành
+                .GroupBy(b => b.Service.Category.Name) // Nhóm theo tên danh mục
+                .Select(g => new
+                {
+                    Name = g.Key ?? "Chưa phân loại", // Tên danh mục
+                    Value = g.Count() // Số lượng đơn
+                })
+                .ToListAsync();
+
+            return Ok(stats);
         }
     }
 }

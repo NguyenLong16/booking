@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\Migrations\\20251223092356_RemoveServiceInCategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BookingSystem.API\\Migrations\\20251223092356_RemoveServiceInCategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3857D59B-18E7-4E9F-8C13-54A4EE0744F9}|BookingSystem.API\\BookingSystem.API.csproj|f:\\workspace\\bookingsystem\\bookingsystem.api\\bookingsystem.api\\controllers\\statscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3857D59B-18E7-4E9F-8C13-54A4EE0744F9}|BookingSystem.API\\BookingSystem.API.csproj|solutionrelative:bookingsystem.api\\controllers\\statscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3857D59B-18E7-4E9F-8C13-54A4EE0744F9}|BookingSystem.API\\BookingSystem.API.csproj|f:\\workspace\\bookingsystem\\bookingsystem.api\\bookingsystem.api\\dtos\\servicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3857D59B-18E7-4E9F-8C13-54A4EE0744F9}|BookingSystem.API\\BookingSystem.API.csproj|solutionrelative:bookingsystem.api\\dtos\\servicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3857D59B-18E7-4E9F-8C13-54A4EE0744F9}|BookingSystem.API\\BookingSystem.API.csproj|f:\\workspace\\bookingsystem\\bookingsystem.api\\bookingsystem.api\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3857D59B-18E7-4E9F-8C13-54A4EE0744F9}|BookingSystem.API\\BookingSystem.API.csproj|solutionrelative:bookingsystem.api\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3857D59B-18E7-4E9F-8C13-54A4EE0744F9}|BookingSystem.API\\BookingSystem.API.csproj|f:\\workspace\\bookingsystem\\bookingsystem.api\\bookingsystem.api\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3857D59B-18E7-4E9F-8C13-54A4EE0744F9}|BookingSystem.API\\BookingSystem.API.csproj|f:\\workspace\\bookingsystem\\bookingsystem.api\\bookingsystem.api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3857D59B-18E7-4E9F-8C13-54A4EE0744F9}|BookingSystem.API\\BookingSystem.API.csproj|solutionrelative:bookingsystem.api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3857D59B-18E7-4E9F-8C13-54A4EE0744F9}|BookingSystem.API\\BookingSystem.API.csproj|f:\\workspace\\bookingsystem\\bookingsystem.api\\bookingsystem.api\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3857D59B-18E7-4E9F-8C13-54A4EE0744F9}|BookingSystem.API\\BookingSystem.API.csproj|solutionrelative:bookingsystem.api\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3857D59B-18E7-4E9F-8C13-54A4EE0744F9}|BookingSystem.API\\BookingSystem.API.csproj|f:\\workspace\\bookingsystem\\bookingsystem.api\\bookingsystem.api\\dtos\\servicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3857D59B-18E7-4E9F-8C13-54A4EE0744F9}|BookingSystem.API\\BookingSystem.API.csproj|solutionrelative:bookingsystem.api\\dtos\\servicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3857D59B-18E7-4E9F-8C13-54A4EE0744F9}|BookingSystem.API\\BookingSystem.API.csproj|f:\\workspace\\bookingsystem\\bookingsystem.api\\bookingsystem.api\\migrations\\20251223075611_addcategoryanddurationunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,8 +35,8 @@
       "RelativeMoniker": "D:0:0:{3857D59B-18E7-4E9F-8C13-54A4EE0744F9}|BookingSystem.API\\BookingSystem.API.csproj|solutionrelative:bookingsystem.api\\entities\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3857D59B-18E7-4E9F-8C13-54A4EE0744F9}|BookingSystem.API\\BookingSystem.API.csproj|f:\\workspace\\bookingsystem\\bookingsystem.api\\bookingsystem.api\\controllers\\statscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3857D59B-18E7-4E9F-8C13-54A4EE0744F9}|BookingSystem.API\\BookingSystem.API.csproj|solutionrelative:bookingsystem.api\\controllers\\statscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3857D59B-18E7-4E9F-8C13-54A4EE0744F9}|BookingSystem.API\\BookingSystem.API.csproj|f:\\workspace\\bookingsystem\\bookingsystem.api\\bookingsystem.api\\migrations\\20251223092356_removeserviceincategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3857D59B-18E7-4E9F-8C13-54A4EE0744F9}|BookingSystem.API\\BookingSystem.API.csproj|solutionrelative:bookingsystem.api\\migrations\\20251223092356_removeserviceincategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,11 +46,40 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "Category.cs",
+              "DocumentMoniker": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "BookingSystem.API\\Entities\\Category.cs",
+              "ToolTip": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\Entities\\Category.cs",
+              "RelativeToolTip": "BookingSystem.API\\Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T07:48:03.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "BookingSystem.API\\Data\\AppDbContext.cs",
+              "ToolTip": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "BookingSystem.API\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T07:49:49.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "20251223092356_RemoveServiceInCategory.cs",
               "DocumentMoniker": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\Migrations\\20251223092356_RemoveServiceInCategory.cs",
               "RelativeDocumentMoniker": "BookingSystem.API\\Migrations\\20251223092356_RemoveServiceInCategory.cs",
@@ -58,44 +87,47 @@
               "RelativeToolTip": "BookingSystem.API\\Migrations\\20251223092356_RemoveServiceInCategory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T09:23:57.819Z",
+              "WhenOpened": "2025-12-23T09:23:57.819Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StatsController.cs",
+              "DocumentMoniker": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\Controllers\\StatsController.cs",
+              "RelativeDocumentMoniker": "BookingSystem.API\\Controllers\\StatsController.cs",
+              "ToolTip": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\Controllers\\StatsController.cs",
+              "RelativeToolTip": "BookingSystem.API\\Controllers\\StatsController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAcwD8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T06:42:03.735Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ServiceController.cs",
               "DocumentMoniker": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\Controllers\\ServiceController.cs",
               "RelativeDocumentMoniker": "BookingSystem.API\\Controllers\\ServiceController.cs",
               "ToolTip": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\Controllers\\ServiceController.cs",
               "RelativeToolTip": "BookingSystem.API\\Controllers\\ServiceController.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAUwIsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAUwIIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-23T08:15:09.186Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "BookingSystem.API\\Controllers\\CategoryController.cs",
-              "ToolTip": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "BookingSystem.API\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAIwDEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T08:14:14.948Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "ServiceDto.cs",
               "DocumentMoniker": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\DTOs\\ServiceDto.cs",
               "RelativeDocumentMoniker": "BookingSystem.API\\DTOs\\ServiceDto.cs",
               "ToolTip": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\DTOs\\ServiceDto.cs",
               "RelativeToolTip": "BookingSystem.API\\DTOs\\ServiceDto.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAYwBMAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-23T08:13:37.377Z",
               "EditorCaption": ""
@@ -110,21 +142,19 @@
               "RelativeToolTip": "BookingSystem.API\\Migrations\\20251223075611_AddCategoryAndDurationUnit.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T07:56:11.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T07:56:11.701Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "BookingSystem.API\\Data\\AppDbContext.cs",
-              "ToolTip": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "BookingSystem.API\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA3AAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "BookingSystem.API\\Controllers\\CategoryController.cs",
+              "ToolTip": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "BookingSystem.API\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T07:49:49.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T08:14:14.948Z"
             },
             {
               "$type": "Document",
@@ -136,42 +166,7 @@
               "RelativeToolTip": "BookingSystem.API\\Entities\\Service.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAiwCEAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T07:44:28.352Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Category.cs",
-              "DocumentMoniker": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\Entities\\Category.cs",
-              "RelativeDocumentMoniker": "BookingSystem.API\\Entities\\Category.cs",
-              "ToolTip": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\Entities\\Category.cs",
-              "RelativeToolTip": "BookingSystem.API\\Entities\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T07:48:03.767Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "StatsController.cs",
-              "DocumentMoniker": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\Controllers\\StatsController.cs",
-              "RelativeDocumentMoniker": "BookingSystem.API\\Controllers\\StatsController.cs",
-              "ToolTip": "F:\\WorkSpace\\BookingSystem\\BookingSystem.API\\BookingSystem.API\\Controllers\\StatsController.cs",
-              "RelativeToolTip": "BookingSystem.API\\Controllers\\StatsController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAcwDsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T06:42:03.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T07:44:28.352Z"
             }
           ]
         }

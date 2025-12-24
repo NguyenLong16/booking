@@ -397,6 +397,16 @@
   },
   {
     "ContainingType": "BookingSystem.API.Controllers.StatsController",
+    "Method": "GetCategoryStats",
+    "RelativePath": "api/Stats/category",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookingSystem.API.Controllers.StatsController",
     "Method": "GetRevenueStats",
     "RelativePath": "api/Stats/revenue",
     "HttpMethod": "GET",

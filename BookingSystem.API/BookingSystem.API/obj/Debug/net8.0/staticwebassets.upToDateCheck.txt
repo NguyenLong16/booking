@@ -5,3 +5,14 @@ wwwroot\uploads\80ea74c5-e4c2-434e-abeb-4854e92ba4fe_ảnh 8.jfif
 wwwroot\uploads\b529218c-5b95-4b86-8939-f1853e68d95d_ảnh 9.jfif
 wwwroot\uploads\43025448-1bb1-444c-99c5-0e9380d469bb_ảnh 6.jfif
 wwwroot\uploads\41c21563-61a0-4bfe-a625-0a06b6e5f30b_dich-vu-du-lich-2.jpg
+wwwroot\uploads\ae8de1ad-f327-49f6-9c58-dc71dc86b64f_ảnh 1.avif
+wwwroot\uploads\7725f79b-ab17-47d0-8a63-2eecb3a44c43_ảnh 1.avif
+wwwroot\uploads\d9fcb413-18ef-4231-84a7-42a15553563a_ảnh 1.avif
+wwwroot\uploads\e94ca2dc-88d5-485f-8ecf-464418002e7c_ảnh 1.avif
+wwwroot\uploads\61a9136b-8556-47b2-98bd-ced1707fd184_ảnh 4.jfif
+wwwroot\uploads\7d00fb75-c601-4f91-98ee-5c485051f204_dich-vu-du-lich-2.jpg
+wwwroot\uploads\cb8dfa6a-d646-448a-b9df-51fa30403824_ảnh 3.jpg
+wwwroot\uploads\3aa93635-db31-416b-9057-bace6a674924_ảnh 5.avif
+wwwroot\uploads\de4b6f94-6b4e-4398-86f7-28f5171f7527_ảnh 5.avif
+wwwroot\uploads\d7ec30a8-3916-44ea-8a17-6fc2ba0f4dae_ảnh 5.avif
+wwwroot\uploads\378aec17-ca35-4ff8-b412-d9bc575cad84_ảnh 2.jpg
